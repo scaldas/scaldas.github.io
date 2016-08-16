@@ -2,39 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>close-up</title>
+    <title>CloseUp</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
+
 </head>
 <body>
-    <div class="title">
-        <h1>CloseUp: The #1 Place for Movie Fans</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CloseUp</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movies <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="favorite-movies.html">Our Favourites</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">New Releases</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+</nav>
 
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="favorite-movies.html">Favorite Movies</a>
-        <a href="contact.html">Contact</a>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Page under construction</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Please come back later.</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-    
-    <div class="movie-title">
-        <h4>Contact</h4>
-    </div>
+</div>
 
-    <div class="developers">
-        <img src="img/maca.jpg" alt="maca">
-        <img src="img/sebas.jpg" alt="sebas">
-        <p class="subtitle">
-            María Camila Angel is a Systems Engineering studen from Universidad de Los Andes. She loves music, movies and travelling. Write her at maca@angel.xyz if you want to chat about her favorite movies. Meanwhile, Sebastian Caldas is also a Systems Engineering studen from Universidad de Los Andes. He loves sleeping, sleeping, and sleeping even more. Don't write to him at sebas@caldas.xyz because he will ignore you (he will be sleeping).
-
-        </p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-header">Contact</h1>
+        </div>
     </div>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#developers" aria-controls="developers" role="tab" data-toggle="tab">Developers</a></li>
+        <li role="presentation"><a href="#sponsors" aria-controls="sponsors" role="tab" data-toggle="tab">Sponsors</a></li>
+    </ul>
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="developers">
+                        <div class="row">
+                <div class="col-md-6 columns developer">
+                    <img class="float-center" src="img/maca.jpg">
+                    <p>
+                        María Camila Angel is a Systems Engineering studen from Universidad de Los Andes. She loves music, movies and travelling. Write her at maca@angel.xyz if you want to chat about her favorite movies.
+                    </p>
+                </div>
+                <div class="col-md-6 columns developer">
+                    <img class="float-center" src="img/sebas.jpg">
+                    <p>
+                        Sebastian Caldas is also a Systems Engineering studen from Universidad de Los Andes. He loves sleeping, sleeping, and sleeping even more. Don't write to him at sebas@caldas.xyz because he will ignore you (he will be sleeping).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="sponsors">
+            <div class="row sponsor">
+                <img class="float-center" src="img/andes.png">
+                <p class="developer">
+                This project was developed under the "Programming with Web Technologies" course at Universidad de Los Andes.
+                </p>
+            </div>
+        </div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
 
-    <div class="sponsors">
-        <img src="img/andes.png" alt="uniandes">
-        <p class="subtitle">
-            This project was developed under the "Programming with Web Technologies" course at Universidad de Los Andes.
-        </p>
-    </div>
+</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
