@@ -1,69 +1,88 @@
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
 body {
-    padding-top: 50px;
+	font-family: "Verdana";
 }
 
-.carousel {
-    height: 700px;
-    margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    z-index: 10;
+.title {
+	display: block;
+	padding: 0;
+	margin: 0;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 700px;
-    background-color: #777;
-}
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
+.subtitle {
+	display: block;
+    text-align: center;
+    font-size: 20px;
 }
 
-.movie-info {
-    padding: 50px 0px;
+a {
+	color: #6495ED;
+}
+
+.home-content img {
+	padding: 20px 0;
+}
+
+.home-content img {
+	width: 33%;
+}
+
+.movie-title {
+	margin: 10px 0;
+	display: block;
+	background-color: #999;
+	min-height: 65px;
+	font-size: 20px;
+}
+
+.movie-title h4 {
+	text-align: center;
+	padding-top: 20px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.news-feed .callout {
+	margin: 40px 30%;
+	padding: 0px auto;
     text-align: justify;
+    border: solid;
+    border-width: 1px;
+    padding: 5px;
 }
 
-.movie-info .source {
+.news-feed .callout img {
+	width: 100%;
+}
+
+.news-title {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.movie_grid {
+	padding-top: 20px;
+}
+
+.movie_grid img {
+	display: inline-block;
+	max-width: 33%;
+}
+
+.source {
     font-style: italic;
 }
 
-.movie-info .title {
-    color: red;
+.developers img {
+	width: 250px;
 }
-
-.quote-marks {
-    font-size: 90px;
-    font-family: Garamond;
-    color: #777;
-}
-
-.float-center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.news-image{
-    max-width: 100%;
-}
-
-.developer {
-    padding-top: 50px;
-    text-align: center;
-}
-
-.developer img {
-    max-width: 40%;
-    border-radius: 50%;
-}
-
-.sponsor {
-    padding-top: 50px;
-    text-align: center;
-}
-

@@ -2,129 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CloseUp</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <title>close-up</title>
     <link rel="stylesheet" type="text/css" href="css/app.css">
-
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">CloseUp</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movies <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="favorite-movies.html">Our Favourites</a></li>
-                            <li><a href="#" data-toggle="modal" data-target="#myModal">New Releases</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+    <div class="title">
+        <h1>CloseUp: The #1 Place for Movie Fans</h1>
     </div>
-</nav>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Page under construction</h4>
-            </div>
-            <div class="modal-body">
-                <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Please come back later.</div>            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="favorite-movies.html">Favorite Movies</a>
+        <a href="contact.html">Contact</a>
     </div>
-</div>
+    
+    <div class="movie-title">
+        <h4>Favorite Movies</h4>
+    </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="page-header">Favorite Movies</h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-md-3">
-            <a href="movie.html" class="thumbnail">
-                <img src="img/eternal.jpg" alt="">
-            </a>
-            <h4>
-                <a href="movie.html">Eternal Sunshine of a Spotless Mind</a>
-                <span class="badge" data-toggle="tooltip" title="We have more information for this title."><span class="glyphicon glyphicon-remove"></span></span>
-            </h4>
-        </div>
-        <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-                <img src="img/mean.jpg" alt="">
-            </a>
-            <h4>
-                <a href="#">Mean Girls</a>
-                <span class="badge" data-toggle="tooltip" title="We do not currently have more information for this title."><span class="glyphicon glyphicon-remove"></span></span>
-            </h4>
-        </div>
-        <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-                <img src="img/gattaca.jpg" alt="">
-            </a>
-            <h4>
-                <a href="#">Gattaca</a>
-                <span class="badge" data-toggle="tooltip" title="We do not currently have more information for this title."><span class="glyphicon glyphicon-remove"></span></span>
-            </h4>        </div>
-        <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-                <img src="img/mustang.jpg" alt="">
-            </a>
-            <h4>
-                <a href="#">Mustang</a>
-                <span class="badge" data-toggle="tooltip" title="We do not currently have more information for this title."><span class="glyphicon glyphicon-remove"></span></span>
-            </h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-                <img src="img/walle.jpg" alt="">
-            </a>
-            <h4>
-                <a href="#">Wall-E</a>
-                <span class="badge" data-toggle="tooltip" title="We do not currently have more information for this title."><span class="glyphicon glyphicon-remove"></span></span>
-            </h4>
-        </div>
-        <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-                <img src="img/song.jpg" alt="">
-            </a>
-            <h4>
-                <a href="#">Song of the Sea</a>
-                <span class="badge" data-toggle="tooltip" title="We do not currently have more information for this title."><span class="glyphicon glyphicon-remove"></span></span>
-            </h4>
-        </div>
-    </div>
-</div>
+    <div class="movie_grid">
+        <a href="movie.html"><img src="img/eternal.jpg" alt="thumbnail"></a>
+        <img src="img/mean.jpg" alt="thumbnail">
+        <img src="img/gattaca.jpg" alt="thumbnail">
 
+        <p class="subtitle">Eternal sunshine of the spotless mind (info!), Mean Girls (no info), Gattaca (no info)</p>
 
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript">$('[data-toggle="tooltip"]').tooltip({'placement': 'bottom'});</script>
+        <img src="img/mustang.jpg" alt="thumbnail">
+        <img src="img/walle.jpg" alt="thumbnail">
+        <img src="img/song.jpg" alt="thumbnail">
+
+        <p class="subtitle">Mustang (no info), Wall-E (no info), Song of the Sea (no info)</p>
+    </div>
 </body>
 </html>
