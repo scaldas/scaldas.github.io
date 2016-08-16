@@ -2,88 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>close-up</title>
+    <title>CloseUp</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="./fonts/foundation-icons/foundation-icons.css">
+
 </head>
 <body>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text"><i class="fi-video size-24"></i> CloseUp</li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="has-submenu is-dropdown-submenu-parent">
-                    <a href="#">Movies</a>
-                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" role="menu">
-                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="favorite-movies.html" tabindex="-1">Our Favorites</a></li>
-                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a data-open="pageUnderConstruction" tabindex="-1">In Theaters</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="reveal" id="pageUnderConstruction" data-reveal>
-      <h1>Page Under Construction.</h1>
-      <p class="lead">Please come back later.</p>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="movie-title">
-        <h4>Eternal Sunshine of the Spotless Mind</h4>
-    </div>
-
-    <div class="content" id="panel-3">
-        <div class="row">
-            <div class="medium-6 columns">
-                <div class="flex-video">
-                    <video controls>
-                        <source src="img/trailer1.mp4" type="video/mp4">
-                    </video>
-                </div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CloseUp</a>
             </div>
-            <div class="medium-6 columns">
-                <div class="movie-info">
-                    <ul class="accordion" data-accordion>
-                      <li class="accordion-item is-active" data-accordion-item>
-                        <a href="#" class="accordion-title">Information</a>
-                        <div class="accordion-content" data-tab-content>
-                          <p>Directed by: Michel Gondry</p>
-                          <p>Produced by: Steve Golin, Anthony Bregman</p>
-                          <p>Screenplay by: Charlie Kaufman</p>
-                          <p>Story by: Charlie Kaufman, Michel Gondry, Pierre Bismuth</p>
-                          <p>Starring: Jim Carrey, Kate Winslet, Kirsten Dunst, Mark Ruffalo, Elijah Wood, Tom Wilkinson</p>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Movies <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="favorite-movies.html">Our Favourites</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">New Releases</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Page under construction</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger" role="alert"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Please come back later.</div>            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="page-header">Eternal Sunshine of a Spotless Mind</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="img/trailer1.mp4"></iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Information
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <p>Directed by: Michel Gondry</p>
+                            <p>Produced by: Steve Golin, Anthony Bregman</p>
+                            <p>Screenplay by: Charlie Kaufman</p>
+                            <p>Story by: Charlie Kaufman, Michel Gondry, Pierre Bismuth</p>
+                            <p>Starring: Jim Carrey, Kate Winslet, Kirsten Dunst, Mark Ruffalo, Elijah Wood, Tom Wilkinson</p>
                         </div>
-                      </li>
-                      <li class="accordion-item" data-accordion-item>
-                        <a href="#" class="accordion-title">Synopsis</a>
-                        <div class="accordion-content" data-tab-content>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Synopsis
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
                             <p>
                                 Joel is stunned to discover that his girlfriend Clementine has had her memories of their tumultuous relationship erased. Out of desperation, he contracts the inventor of the process, Dr. Howard Mierzwaik, to have Clementine removed from his own memory. But as Joel's memories progressively disappear, he begins to rediscover their earlier passion. From deep within the recesses of his brain, Joel attempts to escape the procedure. As Dr. Mierzwiak and his crew chase him through the maze of his memories, it's clear that Joel just can't get her out of his head.
                             </p>
                             <p class="source">
                                 - Focus Features
-                            </p>
-                        </div>
-                      </li>
-                      <li class="accordion-item" data-accordion-item>
-                        <a href="#" class="accordion-title">Reviews</a>
-                        <div class="accordion-content" data-tab-content>
+                            </p>                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Reviews
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
                             <div class="testimonial-wrap">
                                 <div class="row">
-                                    <div class="small-1 large-1 columns testimonial">
+                                    <div class="col-md-1 testimonial">
                                         <div class="quote-marks">&#8220;</div>
                                     </div>
-                                    <div class="small-11 large-11 columns testimonial">
+                                    <div class="col-md-11 columns testimonial">
                                         <div class="quote">
                                             <p>
                                                 Eternal Sunshine of the Spotless Mind goes by like a fevered dream of love, but one you remember vividly, with profound pleasure.
@@ -97,10 +136,10 @@
                             </div>
                             <div class="testimonial-wrap">
                                 <div class="row">
-                                    <div class="small-1 large-1 columns testimonial">
+                                    <div class="col-md-1 testimonial">
                                         <div class="quote-marks">&#8220;</div>
                                     </div>
-                                    <div class="small-11 large-11 columns testimonial">
+                                    <div class="col-md-11 columns testimonial">
                                         <div class="quote">
                                             <p>
                                                 At its core, Eternal Sunshine of the Spotless Mind could have been just another love story. Refracted through Kaufman's wonderfully weird prism, it's something truly memorable.
@@ -113,17 +152,16 @@
                                 </div>
                             </div>
                         </div>
-                      </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
- 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
+</div>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
