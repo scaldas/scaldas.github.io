@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>close-up</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/foundation-icons/foundation-icons.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text"><i class="fi-video size-24"></i> CloseUp</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="has-submenu is-dropdown-submenu-parent">
+                    <a href="#">Movies</a>
+                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" role="menu">
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="favorite-movies.html" tabindex="-1">Our Favorites</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a data-open="pageUnderConstruction" tabindex="-1">In Theaters</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="reveal" id="pageUnderConstruction" data-reveal>
+      <h1>Page Under Construction.</h1>
+      <p class="lead">Please come back later.</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="movie-title">
+        <h4>Favorite Movies</h4>
+    </div>
+    <div class="my_grid">
+        <div class="row small-up-2 medium-up-3 large-up-4">
+            <div class="column">
+                <a href="movie.html"><img class="thumbnail" src="img/eternal.jpg"></a>
+                <h5>
+                    <a href="movie.html">Eternal sunshine of the spotless mind</a>
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" 
+                        title="We have more information for this title.">
+                        <span class="badge">
+                            <i class="fi-check"></i>
+                        </span>
+                    </span>
+                </h5>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/mean.jpg">
+                <h5>
+                    Mean Girls
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" 
+                        title="We do not currently have more information for this title.">
+                        <span class="alert badge">
+                            <i class="fi-x"></i>
+                        </span>
+                    </span>
+                </h5>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/gattaca.jpg">
+                <h5>
+                    Gattaca
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" 
+                        title="We do not currently have more information for this title.">
+                        <span class="alert badge">
+                            <i class="fi-x"></i>
+                        </span>
+                    </span>
+                </h5>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/mustang.jpg">
+                <h5>
+                    Mustang
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" 
+                        title="We do not currently have more information for this title.">
+                        <span class="alert badge">
+                            <i class="fi-x"></i>
+                        </span>
+                    </span>
+                </h5>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/walle.jpg">
+                <h5>
+                    Wall-E
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" 
+                        title="We do not currently have more information for this title.">
+                        <span class="alert badge">
+                            <i class="fi-x"></i>
+                        </span>
+                    </span>
+                </h5>
+            </div>
+            <div class="column">
+                <img class="thumbnail" src="img/song.jpg">
+                <h5>
+                    Song of the Sea
+                    <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" 
+                        title="We do not currently have more information for this title.">
+                        <span class="alert badge">
+                            <i class="fi-x"></i>
+                        </span>
+                    </span>
+                </h5>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

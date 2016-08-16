@@ -1,0 +1,15 @@
+1. Grid (row and columns as described in http://foundation.zurb.com/sites/docs/grid.html) in movie.html and favorite-movies.html
+2. Flex Video (http://foundation.zurb.com/sites/docs/flex-video.html) in movie.html
+3. Accordion (http://foundation.zurb.com/sites/docs/accordion.html) in movie.html
+4. Thumbnail (http://foundation.zurb.com/sites/docs/thumbnail.html) in favorite-movies.html
+5. Badge (http://foundation.zurb.com/sites/docs/badge.html) in favorite-movies.html
+6. Tooltip (http://foundation.zurb.com/sites/docs/tooltip.html) in favorite-movies.html
+7. Top Bar (http://foundation.zurb.com/sites/docs/top-bar.html) in index.html
+8. Submenu (also found in http://foundation.zurb.com/sites/docs/top-bar.html) in index.html
+9. Orbit (http://foundation.zurb.com/sites/docs/orbit.html) in index.html
+10. Reveal (http://foundation.zurb.com/sites/docs/reveal.html) in index.html
+11. Callout (http://foundation.zurb.com/sites/docs/callout.html) in news.html
+12. Float Classes (http://foundation.zurb.com/sites/docs/float-classes.html) in news.html
+13. Dropdown Menu (http://foundation.zurb.com/sites/docs/dropdown-menu.html) in index.html
+14. Button (http://foundation.zurb.com/sites/docs/button.html) in news.html
+15. Tabs (http://foundation.zurb.com/sites/docs/tabs.html) in contact.html

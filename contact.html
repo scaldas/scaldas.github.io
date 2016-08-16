@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>close-up</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="./fonts/foundation-icons/foundation-icons.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <ul class="menu">
+                <li class="menu-text"><i class="fi-video size-24"></i> CloseUp</li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li class="has-submenu is-dropdown-submenu-parent">
+                    <a href="#">Movies</a>
+                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" role="menu">
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="favorite-movies.html" tabindex="-1">Our Favorites</a></li>
+                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a data-open="pageUnderConstruction" tabindex="-1">In Theaters</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="reveal" id="pageUnderConstruction" data-reveal>
+      <h1>Page Under Construction.</h1>
+      <p class="lead">Please come back later.</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="movie-title">
+        <h4>Contact</h4>
+    </div>
+
+    <ul class="tabs" data-tabs id="example-tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Developers</a></li>
+      <li class="tabs-title"><a href="#panel2">Sponsors</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <div class="content" id="panel-3">
+            <div class="row">
+                <div class="medium-6 columns developer">
+                    <img class="float-center" src="img/maca.jpg">
+                    <p>
+                        María Camila Angel is a Systems Engineering studen from Universidad de Los Andes. She loves music, movies and travelling. Write her at maca@angel.xyz if you want to chat about her favorite movies.
+                    </p>
+                </div>
+                <div class="medium-6 columns developer">
+                    <img class="float-center" src="img/sebas.jpg">
+                    <p>
+                        Sebastian Caldas is also a Systems Engineering studen from Universidad de Los Andes. He loves sleeping, sleeping, and sleeping even more. Don't write to him at sebas@caldas.xyz because he will ignore you (he will be sleeping).
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="tabs-panel" id="panel2">
+            <img class="float-center" src="img/andes.png">
+            <p class="developer">
+                This project was developed under the "Programming with Web Technologies" course at Universidad de Los Andes.
+            </p>
+      </div>
+    </div>
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>

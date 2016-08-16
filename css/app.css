@@ -1,0 +1,115 @@
+.size-12 { font-size: 12px; }
+.size-14 { font-size: 14px; }
+.size-16 { font-size: 16px; }
+.size-18 { font-size: 18px; }
+.size-21 { font-size: 21px; }
+.size-24 { font-size: 24px; }
+.size-36 { font-size: 36px; }
+.size-48 { font-size: 48px; }
+.size-60 { font-size: 60px; }
+.size-72 { font-size: 72px; }
+
+.main-title {
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.orbit-slide {
+	max-height: 501px;
+}
+
+.orbit-image {
+	max-height: 501px;
+}
+
+.tabs .tabs-title > a {
+	font-size: 20px;
+}
+
+.developer {
+	padding-top: 50px;
+    text-align: center;
+}
+
+.developer img {
+	max-width: 40%;
+    border-radius: 50%;
+}
+
+.news-feed .callout {
+	margin: 40px 30%;
+	padding: 0px auto;
+    text-align: justify;
+}
+
+.news-title {
+	font-weight: bold;
+}
+
+.orbit {
+	padding-top: 20px;
+	max-width: 60%;
+}
+
+.movie-info .accordion-title {
+	font-size: 20px;
+}
+
+.movie-title {
+	margin: 0px;
+	display: block;
+	background-color: #999;
+	min-height: 80px;
+}
+
+.movie-title h4 {
+	text-align: center;
+	padding-top: 20px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+.movie-info {
+	padding: 50px 0px;
+    text-align: justify;
+}
+
+.movie-info .source {
+    font-style: italic;
+}
+
+.movie-info .title {
+	color: red;
+}
+
+.quote-marks {
+ 	font-size: 90px;
+  	font-family: Garamond;
+  	color: #777;
+}
+
+.my_grid {
+	padding-top: 20px;
+}
+
+.header-orbit {
+	max-width: 100%;
+	padding: 0;
+}
+
+@media all and (max-width: 700px) {
+    .flex-video { 
+    	display: none; 
+    }
+
+    .news-feed .callout {
+		margin: 40px 10%;
+	}
+}
+
+@media all and (max-height: 700px) {
+    .main-title { 
+    	display: none; 
+    }
+}
