@@ -4,96 +4,68 @@
     <meta charset="UTF-8">
     <title>close-up</title>
     <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="./fonts/foundation-icons/foundation-icons.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text"><i class="fi-video size-24"></i> CloseUp</li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="has-submenu is-dropdown-submenu-parent">
-                    <a href="#">Movies</a>
-                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" role="menu">
-                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="favorite-movies.html" tabindex="-1">Our Favorites</a></li>
-                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a data-open="pageUnderConstruction" tabindex="-1">In Theaters</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <div class="title">
+        <h1>CloseUp: The #1 Place for Movie Fans</h1>
     </div>
 
-    <div class="reveal" id="pageUnderConstruction" data-reveal>
-      <h1>Page Under Construction.</h1>
-      <p class="lead">Please come back later.</p>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <div class="menu">
+        <a href="index.html">Home</a></li>
+        <a href="news.html">News</a></li>
+        <a href="favorite-movies.html">Favorite Movies</a></li>
+        <a href="contact.html">Contact</a></li>
     </div>
 
     <div class="movie-title">
         <h4>News</h4>
     </div>
 
-    <div class="news-feed">
-        <div class="callout secondary">
+    <content class="news-feed">
+        <div class="callout">
             <h5 class="news-title">
                 Two New Stills of Passengers with Jennifer Lawrence and Chris Pratt
             </h5>
-            <img src="http://www.awardsdaily.com/wp-content/uploads/2016/08/ew-passengers01000233227_0.jpg" class="float-center" alt="News Image">
+            <img src="http://www.awardsdaily.com/wp-content/uploads/2016/08/ew-passengers01000233227_0.jpg" class="float-center" alt="news image">
             <p>
                 EW has an interview with director Morten Tyldum on Passengers. They don’t give much away but you do get a quick look at the two leads, and the general “look” of the sci-fi tale of love. Passengers, as anyone who has read the script knows, is about two humans aboard a space ship headed for another habitable planet...
             </p>
-            <a class="button"
+            <a
                 href="http://www.awardsdaily.com/2016/08/12/two-new-stills-of-passengers-with-jennifer-lawrence-and-chris-pratt/">
                 Go to source
             </a>
         </div>
-    </div>
+    </content>
 
-    <div class="news-feed">
-        <div class="callout secondary">
+    <content class="news-feed">
+        <div class="callout">
             <h5 class="news-title">
                 RIP Kenny Baker (1934 - 2016)            
             </h5>
-            <img src="http://static1.1.sqspcdn.com/static/f/709071/27192596/1471126324403/starwars-ripbaker-btsr2d2.jpg?token=hNuxtmBkLp08H3gVKdZIdfw1Rfw%3D" class="float-center"
-            alt="News Image">
+            <img src="http://static1.1.sqspcdn.com/static/f/709071/27192596/1471126324403/starwars-ripbaker-btsr2d2.jpg?token=hNuxtmBkLp08H3gVKdZIdfw1Rfw%3D" class="float-center" alt="news image">
             <p>
                 Kenny Baker, the actor inside R2-D2 in each of the Star Wars films, has passed away at 81.    
             </p>
-            <a class="button"
+            <a
                 href="http://thefilmexperience.net/blog/2016/8/13/rip-kenny-baker-1934-2016.html">
                 Go to source
             </a>
         </div>
-    </div>
+    </content>
 
-    <div class="news-feed">
-        <div class="callout secondary">
+    <content class="news-feed">
+        <div class="callout">
             <h5 class="news-title">
                 ‘Sausage Party’ reviews: Seth Rogen’s R-rated cartoon could be a profane Oscar surprise
             </h5>
-            <img src="http://www.goldderby.com/wp-content/uploads/2016/08/sausage-party-620x360.jpg" class="float-center" alt="News Image">
+            <img src="http://www.goldderby.com/wp-content/uploads/2016/08/sausage-party-620x360.jpg" class="float-center" alt="news image">
             <p>
                 Can “Sausage Party” break ground at the Oscars by becoming the first foul-mouthed, R-rated animated feature film to win? It has received solid reviews, scoring 67 on MetaCritic and 83% freshness on Rotten Tomatoes, which indicates lots of admiration, though not as much outright adoration.            </p>
-            <a class="button"
+            <a
                 href="http://www.goldderby.com/article/2016/sausage-party-reviews-seth-rogen-oscar-news-804615739/">
                 Go to source
             </a>
         </div>
-    </div>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
+    </content>
 </body>
 </html>

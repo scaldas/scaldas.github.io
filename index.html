@@ -4,71 +4,25 @@
     <meta charset="UTF-8">
     <title>close-up</title>
     <link rel="stylesheet" type="text/css" href="css/app.css">
-    <link rel="stylesheet" type="text/css" href="css/foundation.css">
-    <link rel="stylesheet" type="text/css" href="./fonts/foundation-icons/foundation-icons.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul class="menu">
-                <li class="menu-text"><i class="fi-video size-24"></i> CloseUp</li>
-            </ul>
-        </div>
-        <div class="top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="has-submenu is-dropdown-submenu-parent">
-                    <a href="#">Movies</a>
-                    <ul class="submenu menu vertical is-dropdown-submenu first-sub" role="menu">
-                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="favorite-movies.html" tabindex="-1">Our Favorites</a></li>
-                        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a data-open="pageUnderConstruction" tabindex="-1">In Theaters</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <div class="title">
+        <h1>CloseUp: The #1 Place for Movie Fans</h1>
     </div>
 
-    <div class="reveal" id="pageUnderConstruction" data-reveal>
-      <h1>Page Under Construction.</h1>
-      <p class="lead">Please come back later.</p>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
+    <div class="menu">
+        <a href="index.html">Home</a></li>
+        <a href="news.html">News</a></li>
+        <a href="favorite-movies.html">Favorite Movies</a></li>
+        <a href="contact.html">Contact</a></li>
     </div>
 
     <div class="home-content">
-        <h1 class="main-title">The #1 Place for Movie Fans</h1>
-        <div class="orbit header-orbit" role="region" aria-label="Highlighted Movies" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
-            <ul class="orbit-container">
-                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-                <li class="is-active orbit-slide">
-                    <img class="orbit-image" src="img/carousel1.png" alt="Space">
-                    <figcaption class="orbit-caption">Movie reviews and news</figcaption>
-                </li>
-                <li class="orbit-slide">
-                    <img class="orbit-image" src="img/carousel2.png" alt="Space">
-                    <figcaption class="orbit-caption">Discover our all time favourites</figcaption>
-                </li>
-                <li class="orbit-slide">
-                    <img class="orbit-image" src="img/carousel4.jpg" alt="Space" >
-                    <figcaption class="orbit-caption">Explore the latests releases</figcaption>
-                </li>
-            </ul>
-            <nav class="orbit-bullets">
-                <button class="is-active" data-slide="0"><span class="show-for-sr">Movie reviews and news.</span><span class="show-for-sr">Current Slide</span></button>
-                <button data-slide="1"><span class="show-for-sr">Discover our all time favourites.</span></button>
-                <button data-slide="2"><span class="show-for-sr">Explore the latests releases.</span></button>
-            </nav>
-        </div>
+        <img src="img/carousel1.png">
+        <img src="img/carousel2.png">
+        <img src="img/carousel4.jpg">
     </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
+    <p class="subtitle">Read movie reviews and news, discover our all time favourites, explore the latests releases...</p>
 </body>
 </html>
