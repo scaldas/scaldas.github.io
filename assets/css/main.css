@@ -3358,3 +3358,30 @@
 	p.subtitle {
 		font-size: 110%;
 	}
+
+	#profile-pic {
+		margin-right: 25px;
+		float: left;
+		width: 16%;
+		height: 16%;
+	}
+
+	@media screen and (max-width: 980px) {
+		#profile-pic {
+			width: 180px;
+			height: 180px;
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		#profile-container {
+			text-align: center;
+		}
+
+		#profile-pic {
+			float: none;
+		}
+	}
+
