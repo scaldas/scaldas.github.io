@@ -3385,3 +3385,37 @@
 		}
 	}
 
+	.navbar {
+		margin-bottom: 50px;
+	    background-color: #585858;
+	}
+
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	}
+
+	.navbar-default .navbar-nav>li>a {
+	    color: #FFF;
+	}
+
+	.navbar-default .navbar-toggle {
+	    border-color: #FFF;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+	    background-color: #FFF;
+	}
+
+	.backToTop {
+	    display: none;
+	    margin: 0 auto;
+	    position: fixed;
+	    bottom: 30px;
+	    right: 30px;
+	    width: 30px;
+	    height: 30px;
+	    cursor: pointer;
+	    z-index: 10;
+	    background-color: #f2849e;
+	    border-radius: 20px;
+	}
+
