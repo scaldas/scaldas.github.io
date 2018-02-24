@@ -3415,7 +3415,35 @@
 	    height: 30px;
 	    cursor: pointer;
 	    z-index: 10;
-	    background-color: #f2849e;
 	    border-radius: 20px;
+	    display: none; 
+	    text-align: center; 
+	    padding-top: 1px;
+	}
+
+	.custom-navbar .fa {font-size:75px}
+
+	@media (max-width:767px) {
+	    .custom-navbar .navbar-right {
+	        float: right;
+	        padding-right: 15px;
+	    }
+	    .custom-navbar .nav.navbar-nav.navbar-right li {
+	        float: right;
+	    }
+	    .custom-navbar .nav.navbar-nav.navbar-right li > a {
+	        padding:8px 5px;
+	    }
+	    .custom-navbar .navbar-toggle {
+	        float: left
+	    }
+	    .custom-navbar .navbar-header {
+	        float: left;
+	        width: auto!important;
+	    }
+	    .custom-navbar .navbar-collapse {
+	        clear: both;
+	        float: none;
+	    }
 	}
 
