@@ -1675,7 +1675,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #f2849e !important;
+			color: #f2ae55 !important; /* Reminder: This is the link color. */
 		}
 
 	strong, b {
@@ -2639,7 +2639,7 @@
 					height: 100%;
 					opacity: 1.0;
 					z-index: 1;
-					opacity: 0.8;
+					opacity: 1; /* Reminder: Change to 0.8 if I want transparency.; */
 				}
 
 				.tiles article > .image:after {
@@ -2754,6 +2754,10 @@
 
 			.tiles article.style7 > .image:before {
 				background-color: #89bb39ff;
+			}
+
+			.tiles article.style8 > .image:before {
+				background-color: #f2ae55;
 			}
 
 			body:not(.is-touch) .tiles article:hover > .image {
